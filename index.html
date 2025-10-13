@@ -8,8 +8,8 @@
     <title>HTML Template</title>
   </head>
   <body>
-    <p id="demo">Replace this content with the calculated sum</p>
-
+    <p id="demo">Replace this content with values of computer and user.</p>
+    <p id="result">Put reslts here</p>
     <script type="text/javascript">
       // Establishing prompt for getting name of user
       let username = prompt('To continue, please enter your name: ');
@@ -23,7 +23,9 @@
       let achoice = `${username}!, You picked ${choice}! The computer picked Bear!`
       console.log(achoice);
       document.getElementById("demo").innerHTML = `${achoice}`;
+      // Hardcoding the computers choice, ppsting it to console
       let compChoice = 'bear';
+      // Creating logic where each case is a user choice and then compares that to the computer choice
       console.log(compChoice);
       switch (choice){
         case bear:
@@ -54,5 +56,7 @@
           }
           break;
       }
+      let rOutput = `You ${result}!`
+      document.getElementById("result").innerHTML = `${rOutput}`
     </script>
   </body>
