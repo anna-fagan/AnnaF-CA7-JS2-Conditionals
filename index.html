@@ -23,5 +23,36 @@
       let achoice = `${username}!, You picked ${choice}! The computer picked Bear!`
       console.log(achoice);
       document.getElementById("demo").innerHTML = `${achoice}`;
+      let compChoice = 'bear';
+      console.log(compChoice);
+      switch (choice){
+        case bear:
+          if (compChoice='ninja'){
+            result='win';
+          } else if (compChoice='hunter'){
+            result='lose';
+          } else{
+            result='tie';
+          }
+          break;
+        case ninja:
+          if (compChoice='ninja'){
+            result='tie';
+          } else if (compChoice='hunter'){
+            result='win';
+          } else{
+            result='lose';
+          }
+          break;
+        case hunter:
+          if (compChoice='ninja'){
+            result='lose';
+          } else if (compChoice='hunter'){
+            result='tie';
+          } else{
+            result='win';
+          }
+          break;
+      }
     </script>
   </body>
