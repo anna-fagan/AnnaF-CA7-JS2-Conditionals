@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anna Fagan">
+    <title>HTML Template</title>
+  </head>
+  <body>
+    <p id="demo">Replace this content with the calculated sum</p>
+
+    <script type="text/javascript">
+      // Establishing prompt for getting name of user
+      let username = prompt('To continue, please enter your name: ');
+      // Posting the response as an alert using the uname variable and posting it to the console log as well
+      let nanswer = `Hi ${username}, let\'s play!`;
+      console.log(nanswer);
+      alert(`${nanswer}`);
+      // Asking for a choice of Bear, Ninja, or Hunter
+      let choice = prompt('Who are you: Bear, Ninja, or Hunter?')
+      // Posting choice to the console and changing the html p tag to reflect the console log
+      let achoice = `${username}!, You picked ${choice}! The computer picked Bear!`
+      console.log(achoice);
+      document.getElementById("demo").innerHTML = `${achoice}`;
+    </script>
+  </body>
