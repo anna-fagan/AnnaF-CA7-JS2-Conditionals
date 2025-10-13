@@ -26,37 +26,38 @@
       // Hardcoding the computers choice, ppsting it to console
       let compChoice = 'bear';
       // Creating logic where each case is a user choice and then compares that to the computer choice
-      console.log(compChoice);
+      let result;
       switch (choice){
-        case bear:
-          if (compChoice='ninja'){
+        case 'bear':
+          if (compChoice ==='ninja'){
             result='win';
-          } else if (compChoice='hunter'){
+          } else if (compChoice ==='hunter'){
             result='lose';
           } else{
             result='tie';
           }
           break;
-        case ninja:
-          if (compChoice='ninja'){
+        case 'ninja':
+          if (compChoice ==='ninja'){
             result='tie';
-          } else if (compChoice='hunter'){
+          } else if (compChoice ==='hunter'){
             result='win';
           } else{
             result='lose';
           }
           break;
-        case hunter:
-          if (compChoice='ninja'){
+        case 'hunter':
+          if (compChoice ==='ninja'){
             result='lose';
-          } else if (compChoice='hunter'){
+          } else if (compChoice ==='hunter'){
             result='tie';
           } else{
             result='win';
           }
           break;
       }
-      let rOutput = `You ${result}!`
-      document.getElementById("result").innerHTML = `${rOutput}`
+      let rOutput = `You ${result}!`;
+      console.log(rOutput)
+      document.getElementById("result").innerHTML = `${rOutput}`;
     </script>
   </body>
